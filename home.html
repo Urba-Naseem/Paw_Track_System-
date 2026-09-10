@@ -6,9 +6,102 @@
   <title>PawTrack-System 🐾</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
- <link rel="stylesheet" href="Home.css"> 
-    
-  </style>
+
+    <style>
+      .blink { 
+  animation: blinker 1.5s linear infinite; 
+} 
+ 
+@keyframes blinker { 
+  50% { opacity: 0.4; } 
+} 
+   
+.alert-box { 
+  animation: fadeInScale 0.7s ease; 
+} 
+
+@keyframes fadeInScale { 
+  from { 
+    transform: scale(0.9); 
+    opacity: 0; 
+  } 
+  to { 
+    transform: scale(1); 
+    opacity: 1; 
+  } 
+} 
+
+.alert-box { 
+  background-color: #fff8f1; 
+  border-color: #c79a6d; 
+} 
+ 
+.text-brown { 
+  color: #4e3629; 
+} 
+ 
+.badge-urgent { 
+  background-color: #c79a6d; 
+  color: white; 
+} 
+ 
+.badge-medical { 
+  background-color: #d1ad7c; 
+  color: #4e3629; 
+} 
+ 
+.badge-missing { 
+  background-color: #d9bc8c; 
+  color: #4e3629; 
+} 
+ 
+.btn-outline-urgent { 
+  border: 2px solid #c79a6d; 
+  color: #c79a6d; 
+  border-radius: 50px; 
+  font-weight: bold; 
+  padding: 10px 20px; 
+  text-align: center; 
+} 
+ 
+.btn-outline-urgent:hover { 
+  background-color: #c79a6d; 
+  color: white; 
+} 
+ 
+.btn-foster { 
+  background-color: #9e7a56; 
+  color: white; 
+  border-radius: 50px; 
+  font-weight: bold; 
+  padding: 10px 20px; 
+  text-align: center; 
+} 
+ 
+.btn-foster:hover { 
+  background-color: #856441; 
+} 
+
+.bg-light { 
+  background-color: #f7f1e1 !important; 
+} 
+
+.bg-mid { 
+  background-color: #D2B48C !important; 
+} 
+
+.containers { 
+  max-width: 900px; 
+  background-color: #f7f1e1; 
+  padding: 20px 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.5); 
+  margin: 40px auto 0 auto; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+      </style>
 </head>
 <body>
 
