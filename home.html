@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PawTrack-System 🐾</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="Home.css"> 
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+   
+  <nav class="navbar navbar-expand-lg navbar-dark bg-coffee">
+    <a class="navbar-brand" href="#" style="font-size: large;">PawTrack-System 🐾</a>
+    <div class="containers">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+          <li class="nav-item"><a class="nav-link" href="adoption.html">Adopt</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="foster.html">Foster</a></li>
+          <li class="nav-item"><a class="nav-link" href="vetservicess.html">VetSevices</a></li>
+          <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+        </ul>
+  
+        <!-- Search bar aligned with nav -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+
+  <section class="funfact-section py-5 bg-light">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="funfact-box">
+            <h2 class="count-text" data-target="2600">0</h2>
+            <p>Animals Counted</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="funfact-box">
+            <h2 class="count-text" data-target="1500">0</h2>
+            <p>Adoptions Completed</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="funfact-box">
+            <h2 class="count-text" data-target="400">0</h2>
+            <p>Volunteers Registered</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="funfact-box">
+            <h2 class="count-text" data-target="85">0</h2>
+            <p>Foster Homes Active</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Custom Bootstrap Carousel -->
+<div id="customCarousel" class="carousel slide carousel-fade bg-light" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="welcome.png" class="d-block w-100" alt="Welcome">
+    </div>
+    <div class="carousel-item">
+      <img src="adopts.png" class="d-block w-100" alt="Adopt">
+    </div>
+    <div class="carousel-item">
+      <img src="8cb8eda3-4175-476a-8a4c-28d503ed72c3.png" class="d-block w-100" alt="Volunteer">
+    </div>
+    <div class="carousel-item">
+      <img src="adopts.png" class="d-block w-100" alt="Adopt Again">
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!-- How It Works -->
+<section class="py-5 bg-light ">
+    <div class="container text-center">
+      <h3 class="mb-5">How It Works</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card p-4 bg-mid" style="box-shadow: 0 6px 12px rgba(184, 134, 11, 0.6); border: none;">
+            <i class="bi bi-search" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Search Pets</h5>
+            <p>Find animals based on your preferences.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-4 bg-mid" style="box-shadow: 0 6px 12px rgba(184, 134, 11, 0.6); border: none;">
+            <i class="bi bi-heart" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Apply to Adopt</h5>
+            <p>Fill out an application form easily.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-4 bg-mid" style="box-shadow: 0 6px 12px rgba(184, 134, 11, 0.6); border: none;">
+            <i class="bi bi-house-door" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Meet & Greet</h5>
+            <p>Visit and meet your new friend.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-4 bg-mid" style="box-shadow: 0 6px 12px rgba(184, 134, 11, 0.6); border: none;">
+            <i class="bi bi-stars" style="font-size: 2rem;"></i>
+            <h5 class="mt-3">Take Them Home</h5>
+            <p>Adopt and give them a forever home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Testimonials -->
+<section class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-5">What People Say</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4 bg-mid" style="background-color: #fefefe; box-shadow: 0 6px 12px rgba(184, 134, 11, 0.3); border: none;">
+            <blockquote class="blockquote mb-0">
+              <p class="mb-3">"PawTrack made it so easy to find my new best friend!"</p>
+              <footer class="blockquote-footer bg-mid" style="background-color: #fefefe; color: black; padding: 5px; display: inline-block; margin: 0;">
+                Emily R., <cite title="Adopter" style="color: black;">Adopter</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4 bg-mid style="background-color: #fefefe; box-shadow: 0 6px 12px rgba(184, 134, 11, 0.3); border: none;">
+            <blockquote class="blockquote mb-0">
+              <p class="mb-3">"Volunteering has never been more rewarding."</p>
+              <footer class="blockquote-footer bg-mid" style="background-color: #fefefe; color: black; padding: 5px; display: inline-block; margin: 0;">
+                James L., <cite title="Volunteer" style="color: black;">Volunteer</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-4 bg-mid" style="background-color: #fefefe; box-shadow: 0 6px 12px rgba(184, 134, 11, 0.3); border: none;">
+            <blockquote class="blockquote mb-0">
+              <p class="mb-3">"A trustworthy platform for animal shelters."</p>
+              <footer class="blockquote-footer bg-mid" style="background-color: #fefefe; color: black; padding: 5px; display: inline-block; margin: 0;">
+                Megan S., <cite title="Shelter Admin" style="color: black;">Shelter Admin</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-light" style="background-color: #f7f1e1;">
+    <div class="container">
+      <h3 class="text-center mb-4" style="color: #5c3a21;">Looking for a Friend?</h3>
+      <div id="dogCarousel3D" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-lg">
+          <div class="carousel-item active">
+            <img src="dog1.jpg" class="d-block w-100 "style="height:500px" alt="Dog 1">
+          </div>
+          <div class="carousel-item">
+            <img src="cat1.jpg" class="d-block w-100"style="height:500px" alt="Dog 2">
+          </div>
+          <div class="carousel-item">
+            <img src="dog2.jpeg" class="d-block w-100"style="height:500px" alt="Dog 2">
+          </div>
+          <div class="carousel-item">
+            <img src="cat2.jpeg" class="d-block w-100"style="height:500px" alt="Dog 2">
+          </div>
+          <div class="carousel-item" id="last-slide">
+            <img src="dog333.jpg" class="d-block w-100 " alt="Dog 3">
+            <div class="carousel-caption d-block mb-4">
+              <a href="adopt.html" class="btn fw-bold px-4 py-2 adopt-btn">
+                What are you waiting for? Adopt me!
+              </a>
+            </div>
+5            
+            </div>
+          </div>
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#dogCarousel3D" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#dogCarousel3D" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+   <!-- PROMINENT Urgent Rescue Alerts -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="alert-box mx-auto p-4 rounded-4 shadow-lg border" style="max-width: 700px;">
+
+      <!-- Header -->
+      <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-exclamation-triangle-fill text-brown fs-2 me-2 blink"></i>
+        <h3 class="text-brown mb-0 fw-bold">🚨 Urgent Rescue Alerts</h3>
+      </div>
+
+      <!-- Scrollable Alert List -->
+      <div style="max-height: 260px; overflow-y: auto;">
+        <div class="d-flex align-items-start mb-3">
+          <img src="dog-thumb.webp" class="rounded me-3" width="70" height="70" alt="Bella">
+          <div>
+            <strong>Bella (2 mo.)</strong><br>
+            Injured pup – needs foster before <strong>May 10</strong>.
+            <span class="badge badge-urgent">Urgent</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <img src="dog-thumb2.jpg" class="rounded me-3" width="70" height="70" alt="Max">
+          <div>
+            <strong>Max (6 yr.)</strong><br>
+            Senior dog with medical needs – <strong>requires home ASAP</strong>.
+            <span class="badge badge-medical">Medical</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-3">
+          <img src="cat3.webp" class="rounded me-3" width="70" height="70" alt="Luna">
+          <div>
+            <strong>Luna (1 yr.)</strong><br>
+            Escaped foster home – missing since May 5.
+            <span class="badge badge-missing">Missing</span>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- CTA Buttons -->
+      <div class="d-flex flex-column mt-4">
+     
+        <a href="foster.html" class="btn btn-foster">❤️ Become Emergency Foster</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    >
+
+
+  <section class="py-5 text-center" style="background-color: #f7f1e1;">
+    <div class="container">
+      <h2 class="mb-4" style="color: #5c3a21;">Make a Difference Today</h2>
+      <p class="mb-5" style="color: #7a5a3c; font-size: 1.1rem;">
+        Whether you adopt, volunteer, or donate — every action brings hope to a life in need.
+      </p>
+      
+      
+ <section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 shadow rounded-3 h-100" style="background-color: #fff7ec;">
+          <div class="mb-3 text-center">
+            <i class="bi bi-heart-fill fs-1 text-danger"></i>
+          </div>
+          <h4 class="mb-2 text-center" style="color: #5c3a21;">Support Us</h4>
+          <p class="text-center" style="color: #7a5a3c;">
+            Your donation helps us provide food, care, and medical aid to rescued animals.
+          </p>
+          <div class="text-center">
+            <a href="donate.html" class="btn fw-bold px-4 py-2 mt-2 donate-btn" style="background-color: #8B4513; color: white; border-radius: 30px;">
+              Donate Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+    
+  
+  <!-- Newsletter -->
+  <section class="py-5 bg-coffee text-white text-center">
+    <div class="container">
+      <h4 class="mb-3">Stay in the Loop</h4>
+      <p>Get updates on new arrivals, events, and adoption stories.</p>
+      <form class="row justify-content-center">
+        <div class="col-md-6">
+          <input type="email" class="form-control mb-2" placeholder="Enter your email">
+          <button class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About PawTrack</h5>
+          <p>We help shelters simplify animal tracking, adoptions, and foster care to give pets a better future.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>Email: pawtrack@example.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Location: City Animal Shelter, Main Street</p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-4">
+        &copy; 2025 PawTrack-System 🐾. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
