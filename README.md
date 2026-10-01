@@ -20,3 +20,8 @@ A team of Web developers, working on a Pet Adoption and Fostering System, named 
 command : docker build --tag devops .
 3. Run the docker image
 command : docker run -d -p 8080:80 devops:latest  
+
+# Week - 3 (Added Backend Module and Created Docker-comper file)
+1. Created Docker file for the Backend module
+2. Created docker-compose.yml  
+3. Application is run through the Docker compose

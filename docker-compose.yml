@@ -1,0 +1,17 @@
+version: 'v5.5.1'
+
+services:
+  frontend:
+    build: ./Frontend
+    container_name: paw_track_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+      
+  backend:
+    build: ./Backend
+    container_name: paw_track_backend
+    ports:
+      - "8080:80"
+  

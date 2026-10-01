@@ -7,280 +7,206 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-    <style>
-      .blink { 
-  animation: blinker 1.5s linear infinite; 
-} 
- 
-@keyframes blinker { 
-  50% { opacity: 0.4; } 
-} 
-   
-.alert-box { 
-  animation: fadeInScale 0.7s ease; 
-} 
+  <style>
+    :root {
+      --coffee: #6f4e37;
+      --tan: #D2B48C;
+    }
 
-@keyframes fadeInScale { 
-  from { 
-    transform: scale(0.9); 
-    opacity: 0; 
-  } 
-  to { 
-    transform: scale(1); 
-    opacity: 1; 
-  } 
-} 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f1e1;
+      color: #333;
+      margin: 0;
+    }
 
-.alert-box { 
-  background-color: #fff8f1; 
-  border-color: #c79a6d; 
-} 
- 
-.text-brown { 
-  color: #4e3629; 
-} 
- 
-.badge-urgent { 
-  background-color: #c79a6d; 
-  color: white; 
-} 
- 
-.badge-medical { 
-  background-color: #d1ad7c; 
-  color: #4e3629; 
-} 
- 
-.badge-missing { 
-  background-color: #d9bc8c; 
-  color: #4e3629; 
-} 
- 
-.btn-outline-urgent { 
-  border: 2px solid #c79a6d; 
-  color: #c79a6d; 
-  border-radius: 50px; 
-  font-weight: bold; 
-  padding: 10px 20px; 
-  text-align: center; 
-} 
- 
-.btn-outline-urgent:hover { 
-  background-color: #c79a6d; 
-  color: white; 
-} 
- 
-.btn-foster { 
-  background-color: #9e7a56; 
-  color: white; 
-  border-radius: 50px; 
-  font-weight: bold; 
-  padding: 10px 20px; 
-  text-align: center; 
-} 
- 
-.btn-foster:hover { 
-  background-color: #856441; 
-} 
+    .blink {
+      animation: blinker 1.5s linear infinite;
+    }
 
-.bg-light { 
-  background-color: #f7f1e1 !important; 
-} 
+    @keyframes blinker {
+      50% { opacity: 0.4; }
+    }
 
-.bg-mid { 
-  background-color: #D2B48C !important; 
-} 
+    .alert-box {
+      animation: fadeInScale 0.7s ease;
+      background-color: #fff8f1;
+      border-color: #c79a6d;
+    }
 
-.containers { 
-  max-width: 900px; 
-  background-color: #f7f1e1; 
-  padding: 20px 30px; 
-  border-radius: 10px; 
-  box-shadow: 0 0 15px rgba(255, 152, 0, 0.5); 
-  margin: 40px auto 0 auto; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-      </style>
-<style>
- :root { 
-  --coffee: #6f4e37; 
-  --tan: #D2B48C; 
-} 
- 
-body { 
-  font-family: 'Segoe UI', sans-serif; 
-  background-color: #f7f1e1; 
-  color: #333; 
-  margin: 0; 
-} 
- 
-.bg-coffee { 
-  background-color: var(--coffee) !important; 
-} 
- 
-.carousel-item img { 
-  height: 600px; 
-  width: 500px; 
-  object-fit: cover; 
-} 
- 
-.navbar-brand { 
-  font-size: large; 
-} 
+    @keyframes fadeInScale {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
 
-.navbar-dark .navbar-nav .nav-link { 
-  color: var(--coffee) !important; 
-  font-size: large; 
-} 
+    .text-brown { color: #4e3629; }
+    .badge-urgent { background-color: #c79a6d; color: white; }
+    .badge-medical { background-color: #d1ad7c; color: #4e3629; }
+    .badge-missing { background-color: #d9bc8c; color: #4e3629; }
 
-a.navbar-brand { 
-  font-size: large; 
-} 
+    .btn-outline-urgent {
+      border: 2px solid #c79a6d;
+      color: #c79a6d;
+      border-radius: 50px;
+      font-weight: bold;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .btn-outline-urgent:hover { background-color: #c79a6d; color: white; }
 
-.navbar-dark .navbar-brand { 
-  color: #fefefe !important; 
-  font-size: x-large !important; 
-  font-style: bold !important; 
-  padding: auto; 
-  margin: auto; 
-} 
+    .btn-foster {
+      background-color: #9e7a56;
+      color: white;
+      border-radius: 50px;
+      font-weight: bold;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .btn-foster:hover { background-color: #856441; }
 
-.navbar-dark .navbar-nav .nav-link:hover { 
-  color: #fefefe !important; 
-} 
+    .bg-light { background-color: #f7f1e1 !important; }
+    .bg-mid { background-color: #D2B48C !important; }
 
-a.link { 
-  background-color: #6f4e37; 
-  color: white; 
-} 
+    .containers {
+      max-width: 900px;
+      background-color: #f7f1e1;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 152, 0, 0.5);
+      margin: 40px auto 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-a.link:hover { 
-  background-color: var(--coffee); 
-  color: var(--coffee); 
-  border-color: var(--coffee); 
-  transform: scale(1.05); 
-  cursor: pointer; 
-  transition: all 0.3s ease; 
-}
-</style>
-    
-  
+    .bg-coffee { background-color: var(--coffee) !important; }
 
-    <style>
-.funfact-box { 
-  padding: 20px; 
-  border-radius: 10px; 
-  background-color: var(--tan); 
-  margin-bottom: 30px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-} 
- 
-.funfact-box h2 { 
-  color: var(--coffee); 
-  font-size: 2.5rem; 
-  font-weight: bold; 
-} 
- 
-.cta-section { 
-  background-color: var(--coffee); 
-  color: #fff; 
-} 
- 
-footer { 
-  background-color: var(--coffee); 
-  color: #fff; 
-  padding: 40px 0; 
-} 
- 
-footer a { 
-  color: #fff; 
-  text-decoration: none; 
-} 
+    .carousel-item img {
+      height: 600px;
+      width: 100%; /* FIXED: Changed from 500px to 100% for proper button alignment */
+      object-fit: cover;
+    }
 
-.blockquote-footer { 
-  color: #fefefe; 
-} 
- 
-footer a:hover { 
-  text-decoration: underline; 
-} 
- 
-.footer-bottom { 
-  border-top: 1px solid #ccc; 
-  margin-top: 20px; 
-  padding-top: 20px; 
-  font-size: 0.9rem; 
-} 
+    .navbar-brand { font-size: large; }
+    .navbar-dark .navbar-nav .nav-link { color: var(--coffee) !important; font-size: large; }
+    a.navbar-brand { font-size: large; }
 
-.slide-img { 
-  max-height: 450px; 
-  object-fit: cover; 
-  border-radius: 12px; 
-  transition: transform 1.2s ease; 
-} 
- 
-.carousel-item.active .slide-img { 
-  transform: perspective(1200px) rotateY(0deg); 
-} 
- 
-.carousel-item-next .slide-img, 
-.carousel-item-prev .slide-img { 
-  transform: perspective(1200px) rotateY(15deg); 
-} 
+    .navbar-dark .navbar-brand {
+      color: #fefefe !important;
+      font-size: x-large !important;
+      font-style: bold !important;
+      padding: auto;
+      margin: auto;
+    }
 
-.adopt-btn { 
-  background-color: #8B4513; 
-  color: white; 
-  border-radius: 200px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  transition: all 0.3s ease; 
-  font-size: large; 
-  padding: 1rem 2rem; 
-  width: 250px; 
-  height: 90px;  
-} 
+    .navbar-dark .navbar-nav .nav-link:hover { color: #fefefe !important; }
 
-.btn-coffee { 
-  background-color: #8B4513; 
-  color: white; 
-  border: none; 
-  border-radius: 5px; 
-  padding: 6px 16px; 
-  transition: background-color 0.3s ease, transform 0.2s ease; 
-} 
-   
-.btn-coffee:hover { 
-  background-color: #A0522D; 
-  transform: scale(1.05); 
-  cursor: pointer; 
-} 
-   
-.adopt-btn:hover { 
-  background-color: #A0522D; 
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); 
-  transform: scale(1.05); 
-} 
+    a.link { background-color: #6f4e37; color: white; }
+    a.link:hover {
+      background-color: var(--coffee);
+      color: var(--coffee);
+      border-color: var(--coffee);
+      transform: scale(1.05);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-.donate-btn { 
-  background-color: #8B4513; 
-  color: white; 
-  border-radius: 30px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  transition: all 0.3s ease; 
-} 
- 
-.donate-btn:hover { 
-  background-color: #A0522D; 
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); 
-  transform: scale(1.05);  
-}
-    </style>
+    .funfact-box {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: var(--tan);
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .funfact-box h2 { color: var(--coffee); font-size: 2.5rem; font-weight: bold; }
+    .cta-section { background-color: var(--coffee); color: #fff; }
+
+    footer {
+      background-color: var(--coffee);
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    footer a { color: #fff; text-decoration: none; }
+    .blockquote-footer { color: #fefefe; }
+    footer a:hover { text-decoration: underline; }
+
+    .footer-bottom {
+      border-top: 1px solid #ccc;
+      margin-top: 20px;
+      padding-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .slide-img {
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 1.2s ease;
+    }
+
+    .carousel-item.active .slide-img { transform: perspective(1200px) rotateY(0deg); }
+    .carousel-item-next .slide-img,
+    .carousel-item-prev .slide-img { transform: perspective(1200px) rotateY(15deg); }
+
+    .adopt-btn {
+      background-color: #8B4513;
+      color: white;
+      border-radius: 200px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      font-size: large;
+      padding: 1rem 2rem;
+      width: 250px;
+      height: 90px;
+    }
+
+    .btn-coffee {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 16px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-coffee:hover {
+      background-color: #A0522D;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .adopt-btn:hover {
+      background-color: #A0522D;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+
+    .donate-btn {
+      background-color: #8B4513;
+      color: white;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .donate-btn:hover {
+      background-color: #A0522D;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navbar -->
-   
   <nav class="navbar navbar-expand-lg navbar-dark bg-coffee">
     <a class="navbar-brand" href="#" style="font-size: large;">PawTrack-System 🐾</a>
     <div class="containers">
@@ -309,7 +235,6 @@ footer a:hover {
     </div>
   </nav>
   
-
   <section class="funfact-section py-5 bg-light">
     <div class="container text-center">
       <div class="row">
@@ -340,37 +265,37 @@ footer a:hover {
       </div>
     </div>
   </section>
+
   <!-- Custom Bootstrap Carousel -->
-<div id="customCarousel" class="carousel slide carousel-fade bg-light" data-bs-ride="carousel" data-bs-interval="3000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="welcome.png" class="d-block w-100" alt="Welcome">
+  <div id="customCarousel" class="carousel slide carousel-fade bg-light" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="welcome.png" class="d-block w-100" alt="Welcome">
+      </div>
+      <div class="carousel-item">
+        <img src="adopts.png" class="d-block w-100" alt="Adopt">
+      </div>
+      <div class="carousel-item">
+        <img src="8cb8eda3-4175-476a-8a4c-28d503ed72c3.png" class="d-block w-100" alt="Volunteer">
+      </div>
+      <div class="carousel-item">
+        <img src="adopts.png" class="d-block w-100" alt="Adopt Again">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="adopts.png" class="d-block w-100" alt="Adopt">
-    </div>
-    <div class="carousel-item">
-      <img src="8cb8eda3-4175-476a-8a4c-28d503ed72c3.png" class="d-block w-100" alt="Volunteer">
-    </div>
-    <div class="carousel-item">
-      <img src="adopts.png" class="d-block w-100" alt="Adopt Again">
-    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <!-- Carousel Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
   <!-- How It Works -->
-<section class="py-5 bg-light ">
+  <section class="py-5 bg-light">
     <div class="container text-center">
       <h3 class="mb-5">How It Works</h3>
       <div class="row">
@@ -405,8 +330,9 @@ footer a:hover {
       </div>
     </div>
   </section>
-<!-- Testimonials -->
-<section class="py-5 bg-light">
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-light">
     <div class="container">
       <h3 class="text-center mb-5">What People Say</h3>
       <div class="row">
@@ -421,7 +347,7 @@ footer a:hover {
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card h-100 p-4 bg-mid style="background-color: #fefefe; box-shadow: 0 6px 12px rgba(184, 134, 11, 0.3); border: none;">
+          <div class="card h-100 p-4 bg-mid" style="background-color: #fefefe; box-shadow: 0 6px 12px rgba(184, 134, 11, 0.3); border: none;">
             <blockquote class="blockquote mb-0">
               <p class="mb-3">"Volunteering has never been more rewarding."</p>
               <footer class="blockquote-footer bg-mid" style="background-color: #fefefe; color: black; padding: 5px; display: inline-block; margin: 0;">
@@ -442,32 +368,33 @@ footer a:hover {
         </div>
       </div>
     </div>
-    <section class="bg-light" style="background-color: #f7f1e1;">
+  </section>
+
+  <!-- Looking for a Friend Carousel -->
+  <section class="bg-light" style="background-color: #f7f1e1;">
     <div class="container">
       <h3 class="text-center mb-4" style="color: #5c3a21;">Looking for a Friend?</h3>
       <div id="dogCarousel3D" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
         <div class="carousel-inner rounded shadow-lg">
           <div class="carousel-item active">
-            <img src="dog1.jpg" class="d-block w-100 "style="height:500px" alt="Dog 1">
+            <img src="dog1.jpg" class="d-block w-100" style="height:500px" alt="Dog 1">
           </div>
           <div class="carousel-item">
-            <img src="cat1.jpg" class="d-block w-100"style="height:500px" alt="Dog 2">
+            <img src="cat1.jpg" class="d-block w-100" style="height:500px" alt="Dog 2">
           </div>
           <div class="carousel-item">
-            <img src="dog2.jpeg" class="d-block w-100"style="height:500px" alt="Dog 2">
+            <img src="dog2.jpeg" class="d-block w-100" style="height:500px" alt="Dog 2">
           </div>
           <div class="carousel-item">
-            <img src="cat2.jpeg" class="d-block w-100"style="height:500px" alt="Dog 2">
+            <img src="cat2.jpeg" class="d-block w-100" style="height:500px" alt="Dog 2">
           </div>
           <div class="carousel-item" id="last-slide">
-            <img src="dog333.jpg" class="d-block w-100 " alt="Dog 3">
+            <img src="dog333.jpg" class="d-block w-100" style="height:500px" alt="Dog 3">
             <div class="carousel-caption d-block mb-4">
               <a href="adopt.html" class="btn fw-bold px-4 py-2 adopt-btn">
                 What are you waiting for? Adopt me!
               </a>
-            </div>
-5            
-            </div>
+            </div>          
           </div>
         </div>
   
@@ -482,59 +409,55 @@ footer a:hover {
       </div>
     </div>
   </section>
-   <!-- PROMINENT Urgent Rescue Alerts -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <div class="alert-box mx-auto p-4 rounded-4 shadow-lg border" style="max-width: 700px;">
 
-      <!-- Header -->
-      <div class="d-flex align-items-center mb-3">
-        <i class="bi bi-exclamation-triangle-fill text-brown fs-2 me-2 blink"></i>
-        <h3 class="text-brown mb-0 fw-bold">🚨 Urgent Rescue Alerts</h3>
-      </div>
+  <!-- PROMINENT Urgent Rescue Alerts -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="alert-box mx-auto p-4 rounded-4 shadow-lg border" style="max-width: 700px;">
 
-      <!-- Scrollable Alert List -->
-      <div style="max-height: 260px; overflow-y: auto;">
-        <div class="d-flex align-items-start mb-3">
-          <img src="dog-thumb.webp" class="rounded me-3" width="70" height="70" alt="Bella">
-          <div>
-            <strong>Bella (2 mo.)</strong><br>
-            Injured pup – needs foster before <strong>May 10</strong>.
-            <span class="badge badge-urgent">Urgent</span>
+        <!-- Header -->
+        <div class="d-flex align-items-center mb-3">
+          <i class="bi bi-exclamation-triangle-fill text-brown fs-2 me-2 blink"></i>
+          <h3 class="text-brown mb-0 fw-bold">🚨 Urgent Rescue Alerts</h3>
+        </div>
+
+        <!-- Scrollable Alert List -->
+        <div style="max-height: 260px; overflow-y: auto;">
+          <div class="d-flex align-items-start mb-3">
+            <img src="dog-thumb.webp" class="rounded me-3" width="70" height="70" alt="Bella">
+            <div>
+              <strong>Bella (2 mo.)</strong><br>
+              Injured pup – needs foster before <strong>May 10</strong>.
+              <span class="badge badge-urgent">Urgent</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <img src="dog-thumb2.jpg" class="rounded me-3" width="70" height="70" alt="Max">
+            <div>
+              <strong>Max (6 yr.)</strong><br>
+              Senior dog with medical needs – <strong>requires home ASAP</strong>.
+              <span class="badge badge-medical">Medical</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <img src="cat3.webp" class="rounded me-3" width="70" height="70" alt="Luna">
+            <div>
+              <strong>Luna (1 yr.)</strong><br>
+              Escaped foster home – <strong>missing since May 5.</strong>
+              <span class="badge badge-missing">Missing</span>
+            </div>
           </div>
         </div>
 
-        <div class="d-flex align-items-start mb-3">
-          <img src="dog-thumb2.jpg" class="rounded me-3" width="70" height="70" alt="Max">
-          <div>
-            <strong>Max (6 yr.)</strong><br>
-            Senior dog with medical needs – <strong>requires home ASAP</strong>.
-            <span class="badge badge-medical">Medical</span>
-          </div>
+        <!-- CTA Buttons -->
+        <div class="d-flex flex-column mt-4">
+          <a href="foster.html" class="btn btn-foster">❤️ Become Emergency Foster</a>
         </div>
-
-        <div class="d-flex align-items-start mb-3">
-          <img src="cat3.webp" class="rounded me-3" width="70" height="70" alt="Luna">
-          <div>
-            <strong>Luna (1 yr.)</strong><br>
-            Escaped foster home – missing since May 5.
-            <span class="badge badge-missing">Missing</span>
-          </div>
-        </div>
-      </div>
-      
-
-      <!-- CTA Buttons -->
-      <div class="d-flex flex-column mt-4">
-     
-        <a href="foster.html" class="btn btn-foster">❤️ Become Emergency Foster</a>
       </div>
     </div>
-  </div>
-</section>
-
-    >
-
+  </section>
 
   <section class="py-5 text-center" style="background-color: #f7f1e1;">
     <div class="container">
@@ -543,33 +466,27 @@ footer a:hover {
         Whether you adopt, volunteer, or donate — every action brings hope to a life in need.
       </p>
       
-      
- <section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="p-4 shadow rounded-3 h-100" style="background-color: #fff7ec;">
-          <div class="mb-3 text-center">
-            <i class="bi bi-heart-fill fs-1 text-danger"></i>
-          </div>
-          <h4 class="mb-2 text-center" style="color: #5c3a21;">Support Us</h4>
-          <p class="text-center" style="color: #7a5a3c;">
-            Your donation helps us provide food, care, and medical aid to rescued animals.
-          </p>
-          <div class="text-center">
-            <a href="donate.html" class="btn fw-bold px-4 py-2 mt-2 donate-btn" style="background-color: #8B4513; color: white; border-radius: 30px;">
-              Donate Now
-            </a>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="p-4 shadow rounded-3 h-100" style="background-color: #fff7ec;">
+            <div class="mb-3 text-center">
+              <i class="bi bi-heart-fill fs-1 text-danger"></i>
+            </div>
+            <h4 class="mb-2 text-center" style="color: #5c3a21;">Support Us</h4>
+            <p class="text-center" style="color: #7a5a3c;">
+              Your donation helps us provide food, care, and medical aid to rescued animals.
+            </p>
+            <div class="text-center">
+              <a href="donate.html" class="btn fw-bold px-4 py-2 mt-2 donate-btn" style="background-color: #8B4513; color: white; border-radius: 30px;">
+                Donate Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
-    
-  
   <!-- Newsletter -->
   <section class="py-5 bg-coffee text-white text-center">
     <div class="container">
@@ -585,8 +502,8 @@ footer a:hover {
   </section>
 
   <!-- Footer -->
-<footer>
-
+  <footer>
+    <div class="container">
       <div class="row">
         <div class="col-md-4">
           <h5>About PawTrack</h5>
@@ -613,7 +530,8 @@ footer a:hover {
       </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="home.js"></script>
+  <script src="../Backend/home.js"></script>
 </body>
 </html>
