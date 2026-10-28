@@ -25,3 +25,6 @@ command : docker run -d -p 8080:80 devops:latest
 1. Created Docker file for the Backend module
 2. Created docker-compose.yml  
 3. Application is run through the Docker compose
+
+# Activity 4
+Making changes in the README.md file to test the jenkins software 
